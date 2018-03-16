@@ -1,0 +1,87 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "PepperBooksSample",
+  "desc": "",
+  "culture": "ja-jp",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "質問"
+    }
+  ],
+  "entities": [
+    {
+      "name": "キーワード"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "トイレどこ？",
+      "intent": "質問",
+      "entities": [
+        {
+          "entity": "キーワード",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "トイレはどこですか？",
+      "intent": "質問",
+      "entities": [
+        {
+          "entity": "キーワード",
+          "startPos": 0,
+          "endPos": 2
+        }
+      ]
+    },
+    {
+      "text": "明日の天気を教えて下さい",
+      "intent": "質問",
+      "entities": [
+        {
+          "entity": "キーワード",
+          "startPos": 3,
+          "endPos": 4
+        }
+      ]
+    },
+    {
+      "text": "昼食のメニューを教えて",
+      "intent": "質問",
+      "entities": [
+        {
+          "entity": "キーワード",
+          "startPos": 0,
+          "endPos": 1
+        },
+        {
+          "entity": "キーワード",
+          "startPos": 3,
+          "endPos": 6
+        }
+      ]
+    },
+    {
+      "text": "美味しいラーメン屋を教えて",
+      "intent": "質問",
+      "entities": [
+        {
+          "entity": "キーワード",
+          "startPos": 4,
+          "endPos": 7
+        }
+      ]
+    }
+  ]
+}

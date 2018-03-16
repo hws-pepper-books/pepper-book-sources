@@ -1,0 +1,92 @@
+<html>
+<head>
+    <meta name="viewport" content="initial-scale = 1.335, minimum-scale = 1.335, maximum-scale = 1.335">
+    <meta charset="utf-8">
+
+    <style>
+    @font-face {
+        font-family: mplus-bold;
+        src: url(font/mplus-2p-bold.woff2) format('woff');
+    }
+    @font-face {
+        font-family: mplus-regular;
+        src: url(font/mplus-2p-regular.woff2) format('woff');
+    }
+    @font-face {
+        font-family: APJapanesefont;
+        src: url(font/APJapanesefont.woff2) format('woff');
+    }
+    </style>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+</head>
+<body>
+    <!-- フィルター -->
+    <section id="filter" class="page"></section>
+    <section id="filter_dialog" class="page"></section>
+
+    <!-- ソリタリー画面 -->
+    <section id="solitary" class="page">
+        <div id="solitary_microphone_icon"></div>
+        <div id="balloon_block">
+            <div class="balloon balloon1">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box pink"><p></p></div>
+            </div>
+            <div class="balloon balloon2">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box green"><p></p></div>
+            </div>
+            <div class="balloon balloon3">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box orange"><p></p></div>
+            </div>
+            <div class="balloon play play_setting">
+            </div>
+            <div class="balloon balloon4">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box blue"><p></p></div>
+            </div>
+            <div class="balloon balloon5">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box green"><p></p></div>
+            </div>
+            <div class="balloon balloon6">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box pink"><p></p></div>
+            </div>
+            <!--<div class="balloon rinna rinna_setting">
+            </div>-->
+            <div class="balloon-voice normal">
+                <div class="balloon-box shadow"></div>
+                <div class="balloon-box" id="balloon-color"><p></p></div>
+            </div>
+            <div class="balloon-voice play_setting">
+                <p></p>
+            </div>
+            <div id="balloon-modal"></div>
+        </div>
+    </section>
+
+    <!-- ノーマル -->
+    <section id="normal_mode" class="page fadeIn">
+        <div id="normal_mode_microphone_icon_off"></div>
+        <div id="normal_mode_microphone_icon_on">
+            <div id="normal_microphone_icon_in"></div>
+            <div id="normal_microphone_icon_out"></div>
+        </div>
+        <div class="pepper_balloon"><p></p></div>
+        <div class="cuntomer_balloon"><p></p></div>
+        <div id="normal_btn_top"></div>
+    </section>
+
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/libs/qimessaging/2/qimessaging.js"></script>
+    <script src="js/jquery.qimhelpers2.js" type="application/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="application/javascript"></script>
+    <script src="js/contents.js" type="application/javascript"></script>
+
+</body></html>

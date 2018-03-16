@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+}
+
+body{
+    position:relative;
+    width: 100%;
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-family: mplus-bold;
+}
+
+
+/*************************
+共通
+*************************/
+.page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:1280px;
+    height:800px;
+    overflow:hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+#filter {
+    z-index: 300;
+}
+#filter_dialog {
+    margin-top: 120px;
+    width: 1280px;
+    height: 800px;
+    z-index: 300;
+    background-color: rgba(0, 0, 0, 0.35);
+    display: none;
+}
+
+.pepper_balloon {
+    position: fixed;
+    width: 868px;
+    height: 194px;
+    top: 25px;
+    left: 183px;
+    padding: 90px 28px 25px 18px;
+    background-image: url('../img/balloon_upper.png');
+    /*-webkit-animation: pullDown 3s ease-in-out forwards;*/
+}
+
+.pepper_balloon p{
+    width: 100%;
+    height: 100%;
+    font-size: 45px;
+    text-align: left;
+    display: table-cell;
+    line-height: 53px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.cuntomer_balloon {
+    position: fixed;
+    width: 868px;
+    height: 192px;
+    bottom: 25px;
+    left: 183px;
+    padding: 20px 28px 85px 18px;
+    background-image: url('../img/balloon_lower.png');
+}
+
+.cuntomer_balloon p{
+    width: 850px;
+    height: 170px;
+    font-size: 45px;
+    text-align: left;
+    display: table-cell;
+    line-height: 53px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.pullDown {
+    -webkit-animation-name: pullUpDown;
+    -webkit-animation-duration: 1.1s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform-origin: 50% 0%;
+}
+.pullUp {
+    -webkit-animation-name: pullUpDown;
+    -webkit-animation-duration: 1.1s;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-transform-origin: 50% 100%;
+}
+.pushDown {
+    -webkit-animation-name: pushUpDown;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-transform-origin: 50% 100%;
+    -webkit-animation-fill-mode: forwards;
+}
+.pushUp {
+    -webkit-animation-name: pushUpDown;
+    -webkit-animation-duration: 0.6s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-transform-origin: 50% 0%;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pullUpDown {
+    0% {
+        -webkit-transform: scale3d(0, 0.1, 0);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scaleY(1.02);
+        opacity: 1;
+    }
+    75% {
+        -webkit-transform: scaleY(0.98);
+    }
+    100% {
+        -webkit-transform: scaleY(1);
+    }      
+}
+@-webkit-keyframes pushUpDown {
+    0% {
+        -webkit-transform: scaleY(1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale3d(0, 0, 0);
+        opacity: 0;
+    }      
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 2.0s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes  fadeIn {
+  0% {
+    -webkit-transform: scale(8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/*************************
+    ソリタリー画面
+*************************/
+#solitary {
+    /*display: block;*/
+}
+#solitary_microphone_icon {
+    position: fixed;
+    width: 252px;
+    height: 252px;
+    top: 274px;
+    left: 514px;
+    background-image: url('../img/voice_search_icon_on.png');
+}
+#balloon-modal {
+    width: 1280px;
+    height: 800px;
+    bottom: 0;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 0;
+    display: none;
+    z-index: 100;
+}
+.balloon-modal {
+    -webkit-animation: showModal 2s ease-in-out;
+    animation: showModal 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/*************************
+    通常タイトル
+*************************/
+#normal_mode {
+    width: 1280px;
+    height: 800px;
+    background-image: url('../img/bg_normal.png');
+    font-family: mplus-regular;
+}
+
+#normal_mode_microphone_icon_off {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_off.png');
+}
+
+#normal_microphone_icon_in {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_normal_in.png');
+}
+#normal_microphone_icon_out {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_normal_out.png');
+    -webkit-animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/*************************
+    りんなタイトル
+*************************/
+#rinna_title {
+    width: 1280px;
+    height: 800px;
+    background-image:url('../img/friendly_mode_title.png');
+}
+
+#rinna_mode {
+    width: 1280px;
+    height: 800px;
+    font-family: APJapanesefont;
+    background-image:url('../img/bg_friendly.png');
+}
+
+#rinna_mode_microphone_icon_off {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_off.png');
+}
+
+#rinna_microphone_icon_in {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_friendly_in.png');
+}
+#rinna_microphone_icon_out {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 30px;
+    left: 540px;
+    background-image: url('../img/mic_friendly_out.png');
+    -webkit-animation: spin 1s linear infinite;
+}
+
+#rinna_btn_top {
+    position: fixed;
+    width: 142px;
+    height: 107px;
+    top: 663px;
+    right: 0px;
+    background-image: url('../img/btn_back_normal_off.png');
+}
+
+#normal_btn_top {
+    position: fixed;
+    width: 142px;
+    height: 107px;
+    top: 663px;
+    right: 0px;
+    background-image: url('../img/btn_back_return_off.png');
+}
