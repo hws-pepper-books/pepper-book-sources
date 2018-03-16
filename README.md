@@ -39,7 +39,8 @@ crfx-appdll/cloud-robotics-fx-hws-face-books/db/03_RegisterAppMaster.sql
 
 ### LUISアプリケーション
 
-LUIS: Homepage(https://www.luis.ai/)の「My Apps」にて「Import new app」を選択し、
+LUIS: Homepage (https://www.luis.ai/) 
+の「My Apps」にて「Import new app」を選択し、
 リポジトリの下記ディレクトリに配備されているJSONを選択してください。
 
 crfx-appdll/cloud-robotics-fx-hws-reaction-for-books/luis-app
@@ -52,5 +53,5 @@ root/Init/AppSettings
 
 ## 免責事項
 
-本アプリケーションは、利用者の学習目的に構築されたものであり、MITライセンスとして提供されます。<br/>
+本アプリケーションは、利用者の学習目的に構築されたものであり、MITライセンスとして提供されます。
 本アプリケーションを利用することにより発生したいかなる損害に対しても責任を負うものではない旨、あらかじめご了承ください。
