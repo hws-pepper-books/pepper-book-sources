@@ -48,10 +48,10 @@ crfx-appdll/cloud-robotics-fx-hws-reaction-for-books/luis-app
 アプリケーションが作成されたら、「Train」と「Publish」を実行することでLUS API呼び出しが、Pepperアプリケーション<br/>
 pepper-apps/ReactionTalkPepper/OmotenashiPepperSample.pmlを起動します。
 
-下記ボックスに実行環境に応じたidおよびkey等の情報を設定してください。
+下記ボックスに実行環境に応じたidおよびkey等の情報を設定してください。<br/>
 root/Init/AppSettings
 
 ## 免責事項
 
-本アプリケーションは、利用者の学習目的に構築されたものであり、MITライセンスとして提供されます。
+本アプリケーションは、利用者の学習目的に構築されたものであり、MITライセンスとして提供されます。<br/>
 本アプリケーションを利用することにより発生したいかなる損害に対しても責任を負うものではない旨、あらかじめご了承ください。
